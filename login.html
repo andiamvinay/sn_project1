@@ -1,0 +1,19 @@
+<html>
+<script type="text/javascript" src="scripts/jso.js"></script>
+<script type="text/javascript">
+function snOauth(){
+	var jso = new JSO({
+       providerID: "helpmedo",
+       client_id: "0884c4f24d230300ff087e2d53711801",
+       redirect_uri: "https://helpmedo.herokuapp.com/home.html",
+       authorization: "https://dev18947.servicenow.com/oauth_auth.do",
+    });
+    jso.getToken(function(token) {
+
+	console.log("I got the token: ", token);
+
+	});
+}
+</script>
+<button type="button" onclick="snOauth()">Click Me!</button>
+</html>
