@@ -315,11 +315,11 @@ client.factory('Endpoint', ['AccessToken', '$location',
 
   service.set = function(scope) {
     url = scope.site +
-      scope.authorizePath +
+      //scope.authorizePath +
       '?response_type=token&' +
       'client_id=' + scope.clientId + '&' +
       'redirect_uri=' + scope.redirectUri + '&' +
-      'scope=' + scope.scope + '&' +
+      //'scope=' + scope.scope + '&' +
       'state=' + $location.url()
 
     return url;
