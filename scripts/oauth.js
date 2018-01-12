@@ -7,7 +7,8 @@ function snOauth(){
     });
     jso.callback();
 	jso.getToken(function(token) {
-       console.log("I got the token: ", token);
-       console.log("Access token string itself:", token.access_token);
-    });
+       alert("I got the token: ", token);
+       alert("Access token string itself:", token.access_token);
+  });
+  jso.wipeTokens();
 }
