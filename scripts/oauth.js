@@ -8,6 +8,6 @@ function snOauth(){
     jso.callback();
 	jso.getToken(function(token) {
        console.log("I got the token: ", token);
-       console.log(“Access token string itself:”, token.access_token);
+       console.log("Access token string itself:", token.access_token);
     });
 }
